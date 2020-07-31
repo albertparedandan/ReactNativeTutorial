@@ -26,6 +26,7 @@ import {
 
 import { NavigationContainer } from '@react-navigation/native';
 import TrackPlayer from 'react-native-track-player';
+import MainStackNavigator from './src/navigators/MainStackNavigator';
 
 const start = async () => {
   await TrackPlayer.setupPlayer();
@@ -45,7 +46,7 @@ start();
 const App: () => React$Node = () => {
   return (
     <NavigationContainer>
-      
+      <MainStackNavigator />
     </NavigationContainer>
   );
 };

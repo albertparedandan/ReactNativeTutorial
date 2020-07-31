@@ -24,6 +24,23 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+import TrackPlayer from 'react-native-track-player';
+
+const start = async () => {
+  await TrackPlayer.setupPlayer();
+
+  await TrackPlayer.add({
+    id: 'trackId',
+    url: 'https://hongkong.hmcc.net/wp-content/uploads/sermons/Forward-Part3-2020-07-26-SermonAudio.mp3',
+    title: 'Track Title',
+    artist: 'Track Artist',
+  });
+
+  // Start playing it
+  // await TrackPlayer.play();
+};
+start();
+
 const App: () => React$Node = () => {
   return (
     <>
@@ -65,6 +82,9 @@ const App: () => React$Node = () => {
               </Text>
             </View>
             <LearnMoreLinks />
+          </View>
+          <View>
+            <TrackPlayer />
           </View>
         </ScrollView>
       </SafeAreaView>

@@ -9,7 +9,7 @@ const SermonsScreen: () => React$Node = () => {
     <View>
       <Text>Forward Series Part 3</Text>
       <Text>Pastor Bo Zhu</Text>
-      <TouchableOpacity onPress={() => navigation.navigate('Forward Series Part 3')}>
+      <TouchableOpacity onPress={() => navigation.navigate('Test')}>
         <Text>TEST</Text>
       </TouchableOpacity>
     </View>

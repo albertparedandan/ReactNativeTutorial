@@ -9,7 +9,7 @@ const MainStackNavigator = () => {
   return (
     <MainStack.Navigator>
       <MainStack.Screen name="Sermons" component={SermonsScreen} />
-      <MainStack.Screen name="Forward Series Part 3" component={SermonScreen} />
+      <MainStack.Screen name="Test" component={SermonScreen} />
     </MainStack.Navigator>
   );
 };
